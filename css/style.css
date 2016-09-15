@@ -57,6 +57,14 @@ body{
 
 }
 
+#slides img{
+
+	background:linear-gradient(
+      rgba(65, 65, 70, 0.55), 
+      rgba(65, 65, 70, 0.55)
+    );
+}
+
 .full-page:after{
 
 	background-image: url("mykonos/img/pattern/sayagata-400px.png");
@@ -77,6 +85,14 @@ body{
 
 	font-family: 'Overpass-ExtraLight';
 	font-size: 50px;
+	text-align: center;
+}
+
+.caption h3{
+
+	font-family: 'Overpass-ExtraLight';
+	font-size: 25px;
+	text-align: center;
 }
 
 .footer {

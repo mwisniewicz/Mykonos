@@ -8,6 +8,7 @@
 
 #slides .slides-container img{
   height: 100vh;
+  filter: brightness(50%);
   -webkit-filter: brightness(50%);
 }
 

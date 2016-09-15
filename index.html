@@ -21,20 +21,66 @@
     <!-- Superslides -->
     <link href="css/superslides.css" rel="stylesheet">
 
-    <!-- My styles  -->
+    <!-- Your custom styles (optional) -->
     <link href="css/style.css" rel="stylesheet">
-
-    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-    <symbol id="icon-airplane" viewBox="0 0 32 32">
-<title>airplane</title>
-<path class="path1" d="M24 19.999l-5.713-5.713 13.713-10.286-4-4-17.141 6.858-5.397-5.397c-1.556-1.556-3.728-1.928-4.828-0.828s-0.727 3.273 0.828 4.828l5.396 5.396-6.858 17.143 4 4 10.287-13.715 5.713 5.713v7.999h4l2-6 6-2v-4l-7.999 0z"></path>
-</symbol></svg>
 
 </head>
 
 <body>
 
-<!--Navbar-->
+
+
+<!-- Start Page-->
+
+    <!--<div class="full-page animated pulse">
+   
+    </div> -->
+
+  <div id="slides">
+  <ul class="slides-container">
+    <li>
+      <img src="/mykonos/img/front/front.jpg" alt="">
+      <div class="container">
+      <div class="caption">
+            <h1 class="animated fadeIn">Podróże na Mykonos</h1>
+            <h3 class="animated fadeIn">Najlepsze miejsca</h3>
+    </div>
+    <a class="ghost-button" href="#FOOTER">Zobacz więcej</a>
+
+      </div>
+    </li>
+    <li>
+      <img src="/mykonos/img/front/front2.jpg" alt="">
+      <div class="container">
+        <div class="caption">
+            <h1 class="animated fadeIn">Podróże na Mykonos</h1>
+            <h3 class="animated fadeIn">Najlepsze zdjęcia</h3>
+    </div>
+    <a class="ghost-button" href="#FOOTER">Zobacz więcej</a>
+      </div>
+    </li>
+    <li>
+      <img src="/mykonos/img/front/front3.jpg" alt="">
+      <div class="container">
+        <div class="caption">
+            <h1 class="animated fadeIn">Podróże na Mykonos</h1>
+            <h3 class="animated fadeIn">Niezapomniane chwile chwile</h3>
+    </div>
+    <a class="ghost-button" href="#FOOTER">Zobacz więcej</a>
+      </div>
+    </li>
+
+  </ul>
+  <nav class="slides-navigation">
+    <a href="#" class="next"><i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
+    <a href="#" class="prev"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i></a>
+  </nav>
+
+</div>
+
+    
+
+     <!--Navbar-->
             <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar">
             <!--Links-->
             <ul class="nav navbar-nav">
@@ -53,51 +99,6 @@
             </ul>
         </nav>
 
-<!-- SLIDER -->
-
-    <div id="slides">
-        <ul class="slides-container">
-            <li>
-              <img src="/mykonos/img/front/front.jpg" alt="">
-                  <div class="container">
-                    <div class="caption">
-                        <h1 class="animated fadeIn">Podróże na Mykonos</h1>
-                        <h3 class="animated fadeIn">Najlepsze miejsca</h3>
-                    </div>
-                <a class="ghost-button" href="#FOOTER">Zobacz więcej</a>
-
-                  </div>
-            </li>
-            <li>
-              <img src="/mykonos/img/front/front2.jpg" alt="">
-              <div class="container">
-                <div class="caption">
-                    <h1 class="animated fadeIn">Podróże na Mykonos</h1>
-                    <h3 class="animated fadeIn">Najlepsze zdjęcia</h3>
-            </div>
-            <a class="ghost-button" href="#FOOTER">Zobacz więcej</a>
-              </div>
-            </li>
-            <li>
-              <img src="/mykonos/img/front/front3.jpg" alt="">
-              <div class="container">
-                <div class="caption">
-                    <h1 class="animated fadeIn">Podróże na Mykonos</h1>
-                    <h3 class="animated fadeIn">Niezapomniane chwile chwile</h3>
-            </div>
-            <a class="ghost-button" href="#FOOTER">Zobacz więcej</a>
-              </div>
-            </li>
-
-        </ul>
-        <nav class="slides-navigation">
-            <a href="#" class="next"><i class="fa fa-angle-right fa-4x" aria-hidden="true"></i></a>
-            <a href="#" class="prev"><i class="fa fa-angle-left fa-4x" aria-hidden="true"></i></a>
-        </nav>
-
-    </div>
-    
-
 <!-- Footer -->
     
     <div class="footer" id="FOOTER">
@@ -105,10 +106,9 @@
             <div class="row">
 
                 <div class="footer-1 col-md-4 animated bounceInLeft"> 
-                    <div class="footer-title flex-center"> </div>
+                    <div class="footer-title flex-center">Footer-1</div>
                     <div class="footer-caption flex-center">
-                    <svg class="icon icon-airplane"><use xlink:href="#icon-airplane"></use></svg>
-
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium eleifend ante, dictum pretium orci placerat non. Vestibulum non volutpat purus. Morbi tincidunt lorem feugiat finibus rutrum. Nunc libero purus, euismod efficitur dapibus vitae, imperdiet maximus turpis.
                     </div>
                 </div>
 
@@ -160,7 +160,7 @@
       $('#slides').superslides({
         animation: 'fade',
         hashchange: true,
-        play: 4000
+        play: 3000
       });
 
       $('#slides').on('mouseenter', function() {

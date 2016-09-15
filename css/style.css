@@ -21,7 +21,14 @@ body{
 .navbar-dark .navbar-nav .nav-link {
 
     color: #fff;
-    opacity: 0.8;
+    font-family: "Overpass-ExtraLight";
+    left:50%;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+
+    color: #fff;
+    opacity: 0.5;
     font-family: "Overpass-ExtraLight";
     left:50%;
 }
@@ -57,13 +64,6 @@ body{
 
 }
 
-#slides img{
-
-	background:linear-gradient(
-      rgba(65, 65, 70, 0.55), 
-      rgba(65, 65, 70, 0.55)
-    );
-}
 
 .full-page:after{
 
@@ -93,6 +93,30 @@ body{
 	font-family: 'Overpass-ExtraLight';
 	font-size: 25px;
 	text-align: center;
+}
+
+.ghost-button {
+	position: absolute;
+	top:80%;
+	left:43%;
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  border: 1px solid #fff;
+  opacity: 0.9;
+  transition: 0.6s;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+}
+
+.ghost-button:hover,
+.ghost-button:active {
+  background-color: #fff;
+  color: #000;
+  opacity: 0.7;
+  transition:  0.6s;
 }
 
 .footer {

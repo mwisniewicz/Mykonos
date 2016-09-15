@@ -1,0 +1,102 @@
+@font-face {
+  font-family: 'Overpass-Light';
+  src: url('/mykonos/font/Overpass-Light.ttf'); 
+}
+
+@font-face {
+  font-family: 'Overpass-ExtraLight';
+  src: url('/mykonos/font/Overpass-ExtraLight.ttf'); 
+}
+
+body{
+
+	font-family: 'Overpass-Light';
+}
+
+
+.navbar {
+    background-color: transparent;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+
+    color: #fff;
+    opacity: 0.8;
+    font-family: "Overpass-ExtraLight";
+    left:50%;
+}
+
+.scrolling-navbar {
+        -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        transition: background .5s ease-in-out, padding .5s ease-in-out;
+}
+
+.top-nav-collapse {
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: transparent;
+    }
+}
+
+.full-page {
+
+	height: 100vh;
+	position: relative;
+	z-index: 1;
+	background: 
+    linear-gradient(
+      rgba(65, 65, 70, 0.55), 
+      rgba(65, 65, 70, 0.55)
+    ),
+    url("/mykonos/img/front/front.jpg");
+    box-shadow: 1px 5px 5px #888888;
+
+}
+
+.full-page:after{
+
+	background-image: url("mykonos/img/pattern/sayagata-400px.png");
+	background-repeat: repeat;
+}
+
+.caption {
+
+	position: absolute;	
+	color: #fff;
+	opacity: 0.8;
+	top:40%;
+	left:35%;
+	z-index: 2;
+}
+
+.caption h1{
+
+	font-family: 'Overpass-ExtraLight';
+	font-size: 50px;
+}
+
+.footer {
+
+	padding-top: 20px;
+	display: block;
+}
+
+.footer-title{
+
+	font-family: 'Overpass-Light';
+	font-size: 1.5em;
+}
+
+.footer-caption{
+	font-family: 'Overpass-ExtraLight';
+	font-size: 1.1em;
+	padding: 8px;
+}
+.copyright {
+
+	padding-top: 20px;
+}
